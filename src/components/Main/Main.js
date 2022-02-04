@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Statistics from '../Statistics';
 import Section from '../Section';
 import FeedbackOptions from '../FeedbackOptions';
+import Notification from '../Notification';
 
 export default class Main extends Component {
   state = {
@@ -46,7 +47,7 @@ export default class Main extends Component {
               positivePercentage={positivePercentage}
             />
           ) : (
-            ''
+            <Notification message="There is no feedback" />
           )}
         </Section>
       </>
