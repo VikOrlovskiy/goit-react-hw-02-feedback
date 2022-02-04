@@ -1,0 +1,11 @@
+.section {
+  background-color: bisque;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.title {
+  text-align: center;
+  border-radius: 8px;
+  background-color: sandybrown;
+}

@@ -1,0 +1,19 @@
+.container {
+  margin-top: 30px;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.text:last-child {
+  margin-bottom: 0;
+}
+.percentage {
+  background-color: black;
+  color: red;
+  padding: 3px;
+  border-radius: 7px;
+}
