@@ -12,18 +12,10 @@ export default class Main extends Component {
     bad: 0,
   };
   onClickIncrementValue = e => {
-    if (e.target.textContent === 'good') {
-      this.setState(prevState => ({ good: prevState.good + 1 }));
-      return;
-    }
-    if (e.target.textContent === 'neutral') {
-      this.setState(prevState => ({ neutral: prevState.neutral + 1 }));
-      return;
-    }
-    if (e.target.textContent === 'bad') {
-      this.setState(prevState => ({ bad: prevState.bad + 1 }));
-      return;
-    }
+    const activeBtnValue = e.target.textContent;
+    this.setState(prevState => ({
+      [activeBtnValue]: prevState[activeBtnValue] + 1,
+    }));
   };
   render() {
     const { good, bad, neutral } = this.state;
